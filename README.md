@@ -6,4 +6,5 @@ These are to be done as first tasks for this project
 - [x] Implement ShadCN
 - [x] Add dark and light mode
 - [x] Implement TanstackRouter
+- [ ] Setup initial UI Scaffolding
 - [ ] Implement TanstackQuery
