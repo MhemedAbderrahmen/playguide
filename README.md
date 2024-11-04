@@ -1,4 +1,4 @@
-### PlayGuide
+## PlayGuide
 
 A web application designed for all gamers around the world.
 
