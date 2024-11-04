@@ -1,5 +1,6 @@
 import { Link } from '@tanstack/react-router';
 import { ModeToggle } from './mode-toggle';
+import { Button } from './ui/button';
 
 export const Navigation = () => {
   return (
@@ -17,7 +18,12 @@ export const Navigation = () => {
             </Link>
           </div>
         </div>
-        <ModeToggle />
+        <div className='flex flex-row items-center space-x-2'>
+          <Button >
+            Boomslang
+          </Button>
+          <ModeToggle />
+        </div>
     </div>
   );
 };
