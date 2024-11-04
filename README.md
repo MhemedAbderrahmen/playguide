@@ -1,3 +1,20 @@
+### PlayGuide
+
+A web application designed for all gamers around the world.
+
+## Premise
+
+With playguide you can find video games of your likings, once you have created an accound and registred your preferences the app will provide you with a list of recomendations based on your preferences selected before hand.
+
+## Core features
+
+Confirmed:
+
+- User account creation
+- Profile setup
+- Video games recommandation
+- Video games best prices recommandations
+
 # Tasks
 
 These are to be done as first tasks for this project
