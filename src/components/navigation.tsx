@@ -12,7 +12,6 @@ export const Navigation = () => {
             <Link to="/" className="[&.active]:underline">
                 Home
             </Link>
-            
             <Link to="/about" className="[&.active]:underline">
                 About
             </Link>
