@@ -10,10 +10,14 @@ With playguide you can find video games of your likings, once you have created a
 
 Confirmed:
 
-- User account creation
+- User account creation (auth)
 - Profile setup
 - Video games recommandation
 - Video games best prices recommandations
+
+Future Ideas/Improvements
+
+- N/A
 
 # Tasks
 
