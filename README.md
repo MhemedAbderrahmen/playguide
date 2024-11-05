@@ -29,5 +29,5 @@ These are to be done as first tasks for this project
 - [x] Implement TanstackRouter
 - [x] Setup initial UI Scaffolding
 - [x] Prettier/Eslint
-- [ ] Implement TanstackQuery
+- [x] Implement TanstackQuery
 - [ ] Vercel deployment
