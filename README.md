@@ -27,7 +27,7 @@ These are to be done as first tasks for this project
 - [x] Implement ShadCN
 - [x] Add dark and light mode
 - [x] Implement TanstackRouter
-- [ ] Vercel deployment
-- [ ] Prettier/Eslint => In Progress
-- [ ] Setup initial UI Scaffolding
+- [x] Setup initial UI Scaffolding
+- [x] Prettier/Eslint
 - [ ] Implement TanstackQuery
+- [ ] Vercel deployment

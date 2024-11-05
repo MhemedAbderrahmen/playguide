@@ -1,9 +1,13 @@
+import { useSignIn } from '@/api/auth/useAuthQuery';
 import { Link } from '@tanstack/react-router';
 import { ModeToggle } from './mode-toggle';
-import { Avatar, AvatarFallback, AvatarImage } from './ui/avatar';
 import { Button } from './ui/button';
 
 export const Navigation = () => {
+  const { mutate } = useSignIn();
+  const handleClick = () => {
+    mutate({email:'email@test.com',password:'test'})
+  }
   return (
     <div className='w-full gap-4 flex justify-between'>
         <div className="flex flex-row space-x-8">
@@ -21,12 +25,12 @@ export const Navigation = () => {
         </div>
         <div className='flex flex-row items-center space-x-2'>
           <ModeToggle />
-          <Button>
-            Boomslang
-            <Avatar className='h-full w-8'>
+          <Button onClick={()=>handleClick()}>
+            Sign In
+            {/* <Avatar className='h-full w-8'>
               <AvatarImage src="https://api.dicebear.com/9.x/pixel-art/svg?seed=boomslang" />
               <AvatarFallback>CN</AvatarFallback>
-            </Avatar>
+            </Avatar> */}
           </Button>
         </div>
     </div>
