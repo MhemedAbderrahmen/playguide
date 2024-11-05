@@ -1,5 +1,6 @@
 import { Link } from '@tanstack/react-router';
 import { ModeToggle } from './mode-toggle';
+import { Avatar, AvatarFallback, AvatarImage } from './ui/avatar';
 import { Button } from './ui/button';
 
 export const Navigation = () => {
@@ -19,10 +20,14 @@ export const Navigation = () => {
           </div>
         </div>
         <div className='flex flex-row items-center space-x-2'>
-          <Button >
-            Boomslang
-          </Button>
           <ModeToggle />
+          <Button>
+            Boomslang
+            <Avatar className='h-full w-8'>
+              <AvatarImage src="https://api.dicebear.com/9.x/pixel-art/svg?seed=boomslang" />
+              <AvatarFallback>CN</AvatarFallback>
+            </Avatar>
+          </Button>
         </div>
     </div>
   );
