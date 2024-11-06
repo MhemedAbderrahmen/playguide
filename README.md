@@ -30,4 +30,4 @@ These are to be done as first tasks for this project
 - [x] Setup initial UI Scaffolding
 - [x] Prettier/Eslint
 - [x] Implement TanstackQuery
-- [ ] Vercel deployment
+- [x] Vercel deployment

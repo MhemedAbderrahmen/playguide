@@ -1,12 +1,12 @@
-import { useSignIn } from '@/api/auth/useAuthQuery';
+import { useTwitchAuthorization } from '@/api/auth/useAuthQuery';
 import { Link } from '@tanstack/react-router';
 import { ModeToggle } from './mode-toggle';
 import { Button } from './ui/button';
 
 export const Navigation = () => {
-  const { mutate } = useSignIn();
+  const { mutate } = useTwitchAuthorization();
   const handleClick = () => {
-    mutate({email:'email@test.com',password:'test'})
+    mutate()
   }
   return (
     <div className='w-full gap-4 flex justify-between'>
