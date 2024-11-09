@@ -1,14 +1,16 @@
-import { SignInFormValues } from '@/lib/schemas/sign-in';
+import { SignInFormValues, TwitchAuthResponse } from '@/lib/schemas/sign-in';
+import { AxiosResponse } from 'axios';
+import twitchAxiosInstance from '../twitch-instance';
 
 export const signIn = async (signInDto: SignInFormValues) => {
   const data = signInDto;
-  console.log('🚀 ~ signIn ~ data:', data);
   return data;
 };
 
-export const twitchAuth = async () => {
-  console.log('🚀 ~ twitchAuth ~ data:', {
-    twitchClientId: import.meta.env.VITE_API_TWITCH_CLIENT_ID,
-    twitchClientSecret: import.meta.env.VITE_API_TWITCH_CLIENT_SECRET,
-  });
+export const twitchAuth = async (): Promise<
+  AxiosResponse<TwitchAuthResponse>
+> => {
+  return await twitchAxiosInstance.post(
+    `/token?client_id=${import.meta.env.VITE_API_TWITCH_CLIENT_ID}&client_secret=${import.meta.env.VITE_API_TWITCH_CLIENT_SECRET}&grant_type=client_credentials`
+  );
 };

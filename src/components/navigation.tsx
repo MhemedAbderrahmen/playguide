@@ -4,10 +4,12 @@ import { ModeToggle } from './mode-toggle';
 import { Button } from './ui/button';
 
 export const Navigation = () => {
-  const { mutate } = useTwitchAuthorization();
+  const { mutateAsync } = useTwitchAuthorization();
+  
   const handleClick = () => {
-    mutate()
+    mutateAsync();
   }
+
   return (
     <div className='w-full gap-4 flex justify-between'>
         <div className="flex flex-row space-x-8">
@@ -27,10 +29,6 @@ export const Navigation = () => {
           <ModeToggle />
           <Button onClick={()=>handleClick()}>
             Sign In
-            {/* <Avatar className='h-full w-8'>
-              <AvatarImage src="https://api.dicebear.com/9.x/pixel-art/svg?seed=boomslang" />
-              <AvatarFallback>CN</AvatarFallback>
-            </Avatar> */}
           </Button>
         </div>
     </div>

@@ -3,7 +3,8 @@ export type SignInFormValues = {
   password: string;
 };
 
-export type TwitchAuthPayload = {
-  client_secret: string;
-  grant_type: string;
+export type TwitchAuthResponse = {
+  access_token: string;
+  token_type: string;
+  expires_in: number;
 };
