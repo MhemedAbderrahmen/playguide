@@ -8,3 +8,5 @@ export type TwitchAuthResponse = {
   token_type: string;
   expires_in: number;
 };
+
+export type GetGamesResponse = {};

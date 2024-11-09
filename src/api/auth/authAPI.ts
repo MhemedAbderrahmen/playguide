@@ -1,6 +1,6 @@
 import { SignInFormValues, TwitchAuthResponse } from '@/lib/schemas/sign-in';
 import { AxiosResponse } from 'axios';
-import twitchAxiosInstance from '../twitch-instance';
+import { twitchAxiosInstance } from '../axios-instance';
 
 export const signIn = async (signInDto: SignInFormValues) => {
   const data = signInDto;

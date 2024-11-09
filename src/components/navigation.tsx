@@ -1,13 +1,15 @@
 import { useTwitchAuthorization } from '@/api/auth/useAuthQuery';
+import { useGetGames } from '@/api/games/use-get-games';
 import { Link } from '@tanstack/react-router';
 import { ModeToggle } from './mode-toggle';
 import { Button } from './ui/button';
 
 export const Navigation = () => {
   const { mutateAsync } = useTwitchAuthorization();
+  const { mutateAsync: getGames} = useGetGames();
   
   const handleClick = () => {
-    mutateAsync();
+    getGames();
   }
 
   return (
